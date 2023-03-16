@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import UIKit
+
+
+struct HomeCollectionViewCellViewModel {
+    
+    let imageName: String
+    let bottomTitle: String
+}

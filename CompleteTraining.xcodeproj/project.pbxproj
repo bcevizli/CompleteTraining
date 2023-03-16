@@ -10,9 +10,37 @@
 		EA1FE33129C36CE90018E13A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE33029C36CE90018E13A /* AppDelegate.swift */; };
 		EA1FE33329C36CE90018E13A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE33229C36CE90018E13A /* SceneDelegate.swift */; };
 		EA1FE33529C36CE90018E13A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE33429C36CE90018E13A /* ViewController.swift */; };
-		EA1FE33829C36CE90018E13A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1FE33629C36CE90018E13A /* Main.storyboard */; };
 		EA1FE33A29C36CEA0018E13A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1FE33929C36CEA0018E13A /* Assets.xcassets */; };
 		EA1FE33D29C36CEA0018E13A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1FE33B29C36CEA0018E13A /* LaunchScreen.storyboard */; };
+		EA1FE34A29C36DBD0018E13A /* ProfileListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE34929C36DBD0018E13A /* ProfileListViewViewModel.swift */; };
+		EA1FE34C29C36DD10018E13A /* ProfileCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE34B29C36DD00018E13A /* ProfileCollectionViewCellViewModel.swift */; };
+		EA1FE34E29C36DE00018E13A /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE34D29C36DE00018E13A /* HomeViewViewModel.swift */; };
+		EA1FE35029C36DF10018E13A /* HomeCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE34F29C36DF10018E13A /* HomeCollectionViewCellViewModel.swift */; };
+		EA1FE35229C36E5B0018E13A /* HomeCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE35129C36E5B0018E13A /* HomeCollectionModel.swift */; };
+		EA1FE35429C36E690018E13A /* ProfileCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE35329C36E680018E13A /* ProfileCollectionModel.swift */; };
+		EA1FE35929C36F030018E13A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE35829C36F030018E13A /* HomeView.swift */; };
+		EA1FE35B29C36F2B0018E13A /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE35A29C36F2B0018E13A /* HomeCollectionViewCell.swift */; };
+		EA1FE35D29C36F4B0018E13A /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE35C29C36F4B0018E13A /* ProfileListView.swift */; };
+		EA1FE35F29C36F5B0018E13A /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE35E29C36F5B0018E13A /* ProfileCollectionViewCell.swift */; };
+		EA1FE36429C370320018E13A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE36329C370320018E13A /* MainTabBarController.swift */; };
+		EA1FE36629C370620018E13A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE36529C370620018E13A /* HomeViewController.swift */; };
+		EA1FE36829C370870018E13A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE36729C370870018E13A /* ProfileViewController.swift */; };
+		EA1FE37029C371250018E13A /* TrainingProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE36F29C371250018E13A /* TrainingProgramViewController.swift */; };
+		EA1FE37729C371950018E13A /* MyProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE37629C371950018E13A /* MyProgramViewController.swift */; };
+		EA1FE37929C371BD0018E13A /* MobilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE37829C371BD0018E13A /* MobilityViewController.swift */; };
+		EA1FE37B29C371CD0018E13A /* LiftingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE37A29C371CD0018E13A /* LiftingViewController.swift */; };
+		EA1FE37D29C371D80018E13A /* StretchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE37C29C371D80018E13A /* StretchingViewController.swift */; };
+		EA1FE37F29C371EC0018E13A /* PersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE37E29C371EC0018E13A /* PersonalInformationViewController.swift */; };
+		EA1FE38129C3725B0018E13A /* TransformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE38029C3725B0018E13A /* TransformationViewController.swift */; };
+		EA1FE38329C3728D0018E13A /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE38229C3728D0018E13A /* CustomCollectionViewCell.swift */; };
+		EA1FE38529C372B90018E13A /* AddTransformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE38429C372B90018E13A /* AddTransformationViewController.swift */; };
+		EA1FE38A29C3735C0018E13A /* AddTransformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE38829C3735C0018E13A /* AddTransformationView.swift */; };
+		EA1FE38B29C3735C0018E13A /* AddTransformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1FE38929C3735C0018E13A /* AddTransformationView.xib */; };
+		EA1FE38D29C374160018E13A /* LiftingProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE38C29C374160018E13A /* LiftingProgressViewController.swift */; };
+		EA1FE38F29C374310018E13A /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE38E29C374310018E13A /* ChallengeViewController.swift */; };
+		EA1FE39129C3743D0018E13A /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE39029C3743D0018E13A /* NotesViewController.swift */; };
+		EA1FE39329C374450018E13A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE39229C374450018E13A /* SettingsViewController.swift */; };
+		EA1FE39529C374E10018E13A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE39429C374E10018E13A /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +48,38 @@
 		EA1FE33029C36CE90018E13A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA1FE33229C36CE90018E13A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EA1FE33429C36CE90018E13A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA1FE33729C36CE90018E13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA1FE33929C36CEA0018E13A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA1FE33C29C36CEA0018E13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA1FE33E29C36CEA0018E13A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1FE34929C36DBD0018E13A /* ProfileListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListViewViewModel.swift; sourceTree = "<group>"; };
+		EA1FE34B29C36DD00018E13A /* ProfileCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		EA1FE34D29C36DE00018E13A /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
+		EA1FE34F29C36DF10018E13A /* HomeCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		EA1FE35129C36E5B0018E13A /* HomeCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionModel.swift; sourceTree = "<group>"; };
+		EA1FE35329C36E680018E13A /* ProfileCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionModel.swift; sourceTree = "<group>"; };
+		EA1FE35829C36F030018E13A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EA1FE35A29C36F2B0018E13A /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA1FE35C29C36F4B0018E13A /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
+		EA1FE35E29C36F5B0018E13A /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA1FE36329C370320018E13A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		EA1FE36529C370620018E13A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA1FE36729C370870018E13A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EA1FE36F29C371250018E13A /* TrainingProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingProgramViewController.swift; sourceTree = "<group>"; };
+		EA1FE37629C371950018E13A /* MyProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProgramViewController.swift; sourceTree = "<group>"; };
+		EA1FE37829C371BD0018E13A /* MobilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityViewController.swift; sourceTree = "<group>"; };
+		EA1FE37A29C371CD0018E13A /* LiftingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingViewController.swift; sourceTree = "<group>"; };
+		EA1FE37C29C371D80018E13A /* StretchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchingViewController.swift; sourceTree = "<group>"; };
+		EA1FE37E29C371EC0018E13A /* PersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInformationViewController.swift; sourceTree = "<group>"; };
+		EA1FE38029C3725B0018E13A /* TransformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationViewController.swift; sourceTree = "<group>"; };
+		EA1FE38229C3728D0018E13A /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA1FE38429C372B90018E13A /* AddTransformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransformationViewController.swift; sourceTree = "<group>"; };
+		EA1FE38829C3735C0018E13A /* AddTransformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransformationView.swift; sourceTree = "<group>"; };
+		EA1FE38929C3735C0018E13A /* AddTransformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTransformationView.xib; sourceTree = "<group>"; };
+		EA1FE38C29C374160018E13A /* LiftingProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingProgressViewController.swift; sourceTree = "<group>"; };
+		EA1FE38E29C374310018E13A /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		EA1FE39029C3743D0018E13A /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		EA1FE39229C374450018E13A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EA1FE39429C374E10018E13A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +112,227 @@
 		EA1FE32F29C36CE90018E13A /* CompleteTraining */ = {
 			isa = PBXGroup;
 			children = (
-				EA1FE33029C36CE90018E13A /* AppDelegate.swift */,
-				EA1FE33229C36CE90018E13A /* SceneDelegate.swift */,
-				EA1FE33429C36CE90018E13A /* ViewController.swift */,
-				EA1FE33629C36CE90018E13A /* Main.storyboard */,
-				EA1FE33929C36CEA0018E13A /* Assets.xcassets */,
-				EA1FE33B29C36CEA0018E13A /* LaunchScreen.storyboard */,
+				EA1FE34429C36D190018E13A /* Resources */,
+				EA1FE34529C36D290018E13A /* ViewModels */,
+				EA1FE34629C36D360018E13A /* Models */,
+				EA1FE34729C36D3E0018E13A /* Views */,
+				EA1FE34829C36D4D0018E13A /* Controllers */,
 				EA1FE33E29C36CEA0018E13A /* Info.plist */,
 			);
 			path = CompleteTraining;
+			sourceTree = "<group>";
+		};
+		EA1FE34429C36D190018E13A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE33029C36CE90018E13A /* AppDelegate.swift */,
+				EA1FE33229C36CE90018E13A /* SceneDelegate.swift */,
+				EA1FE33429C36CE90018E13A /* ViewController.swift */,
+				EA1FE33929C36CEA0018E13A /* Assets.xcassets */,
+				EA1FE33B29C36CEA0018E13A /* LaunchScreen.storyboard */,
+				EA1FE39429C374E10018E13A /* Extension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA1FE34529C36D290018E13A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE34929C36DBD0018E13A /* ProfileListViewViewModel.swift */,
+				EA1FE34B29C36DD00018E13A /* ProfileCollectionViewCellViewModel.swift */,
+				EA1FE34D29C36DE00018E13A /* HomeViewViewModel.swift */,
+				EA1FE34F29C36DF10018E13A /* HomeCollectionViewCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EA1FE34629C36D360018E13A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE35129C36E5B0018E13A /* HomeCollectionModel.swift */,
+				EA1FE35329C36E680018E13A /* ProfileCollectionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA1FE34729C36D3E0018E13A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE38729C372ED0018E13A /* AddTransformationView */,
+				EA1FE35529C36E990018E13A /* HomeView */,
+				EA1FE35629C36E9F0018E13A /* ProfileView */,
+				EA1FE35729C36EA70018E13A /* SettingsView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA1FE34829C36D4D0018E13A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE36029C36FF90018E13A /* TabBarController */,
+				EA1FE36129C370010018E13A /* HomeController */,
+				EA1FE36229C370090018E13A /* ProfileController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA1FE35529C36E990018E13A /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE35829C36F030018E13A /* HomeView.swift */,
+				EA1FE35A29C36F2B0018E13A /* HomeCollectionViewCell.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		EA1FE35629C36E9F0018E13A /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE35C29C36F4B0018E13A /* ProfileListView.swift */,
+				EA1FE35E29C36F5B0018E13A /* ProfileCollectionViewCell.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		EA1FE35729C36EA70018E13A /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		EA1FE36029C36FF90018E13A /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE36329C370320018E13A /* MainTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		EA1FE36129C370010018E13A /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE36529C370620018E13A /* HomeViewController.swift */,
+			);
+			path = HomeController;
+			sourceTree = "<group>";
+		};
+		EA1FE36229C370090018E13A /* ProfileController */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE36729C370870018E13A /* ProfileViewController.swift */,
+				EA1FE36E29C370E70018E13A /* TrainingPrograms */,
+				EA1FE36D29C370DB0018E13A /* Transformations */,
+				EA1FE36C29C370D10018E13A /* LiftingProgress */,
+				EA1FE36B29C370C30018E13A /* Challenges */,
+				EA1FE36A29C370BC0018E13A /* Notes */,
+				EA1FE36929C370AC0018E13A /* Settings */,
+			);
+			path = ProfileController;
+			sourceTree = "<group>";
+		};
+		EA1FE36929C370AC0018E13A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE39229C374450018E13A /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EA1FE36A29C370BC0018E13A /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE39029C3743D0018E13A /* NotesViewController.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		EA1FE36B29C370C30018E13A /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE38E29C374310018E13A /* ChallengeViewController.swift */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
+		EA1FE36C29C370D10018E13A /* LiftingProgress */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE38C29C374160018E13A /* LiftingProgressViewController.swift */,
+			);
+			path = LiftingProgress;
+			sourceTree = "<group>";
+		};
+		EA1FE36D29C370DB0018E13A /* Transformations */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE38029C3725B0018E13A /* TransformationViewController.swift */,
+				EA1FE38229C3728D0018E13A /* CustomCollectionViewCell.swift */,
+				EA1FE38429C372B90018E13A /* AddTransformationViewController.swift */,
+			);
+			path = Transformations;
+			sourceTree = "<group>";
+		};
+		EA1FE36E29C370E70018E13A /* TrainingPrograms */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE36F29C371250018E13A /* TrainingProgramViewController.swift */,
+				EA1FE37529C371690018E13A /* My Program */,
+				EA1FE37429C371650018E13A /* Mobility */,
+				EA1FE37329C3715B0018E13A /* Lifting */,
+				EA1FE37229C371520018E13A /* Stretching */,
+				EA1FE37129C371430018E13A /* Personal Information */,
+			);
+			path = TrainingPrograms;
+			sourceTree = "<group>";
+		};
+		EA1FE37129C371430018E13A /* Personal Information */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE37E29C371EC0018E13A /* PersonalInformationViewController.swift */,
+			);
+			path = "Personal Information";
+			sourceTree = "<group>";
+		};
+		EA1FE37229C371520018E13A /* Stretching */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE37C29C371D80018E13A /* StretchingViewController.swift */,
+			);
+			path = Stretching;
+			sourceTree = "<group>";
+		};
+		EA1FE37329C3715B0018E13A /* Lifting */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE37A29C371CD0018E13A /* LiftingViewController.swift */,
+			);
+			path = Lifting;
+			sourceTree = "<group>";
+		};
+		EA1FE37429C371650018E13A /* Mobility */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE37829C371BD0018E13A /* MobilityViewController.swift */,
+			);
+			path = Mobility;
+			sourceTree = "<group>";
+		};
+		EA1FE37529C371690018E13A /* My Program */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE37629C371950018E13A /* MyProgramViewController.swift */,
+			);
+			path = "My Program";
+			sourceTree = "<group>";
+		};
+		EA1FE38729C372ED0018E13A /* AddTransformationView */ = {
+			isa = PBXGroup;
+			children = (
+				EA1FE38829C3735C0018E13A /* AddTransformationView.swift */,
+				EA1FE38929C3735C0018E13A /* AddTransformationView.xib */,
+			);
+			path = AddTransformationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +394,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA1FE33D29C36CEA0018E13A /* LaunchScreen.storyboard in Resources */,
+				EA1FE38B29C3735C0018E13A /* AddTransformationView.xib in Resources */,
 				EA1FE33A29C36CEA0018E13A /* Assets.xcassets in Resources */,
-				EA1FE33829C36CE90018E13A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +406,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1FE35B29C36F2B0018E13A /* HomeCollectionViewCell.swift in Sources */,
+				EA1FE37F29C371EC0018E13A /* PersonalInformationViewController.swift in Sources */,
+				EA1FE38129C3725B0018E13A /* TransformationViewController.swift in Sources */,
+				EA1FE35029C36DF10018E13A /* HomeCollectionViewCellViewModel.swift in Sources */,
+				EA1FE34C29C36DD10018E13A /* ProfileCollectionViewCellViewModel.swift in Sources */,
+				EA1FE37D29C371D80018E13A /* StretchingViewController.swift in Sources */,
+				EA1FE35229C36E5B0018E13A /* HomeCollectionModel.swift in Sources */,
+				EA1FE39529C374E10018E13A /* Extension.swift in Sources */,
+				EA1FE35F29C36F5B0018E13A /* ProfileCollectionViewCell.swift in Sources */,
+				EA1FE36629C370620018E13A /* HomeViewController.swift in Sources */,
+				EA1FE37B29C371CD0018E13A /* LiftingViewController.swift in Sources */,
+				EA1FE37929C371BD0018E13A /* MobilityViewController.swift in Sources */,
+				EA1FE36829C370870018E13A /* ProfileViewController.swift in Sources */,
+				EA1FE35D29C36F4B0018E13A /* ProfileListView.swift in Sources */,
+				EA1FE35929C36F030018E13A /* HomeView.swift in Sources */,
 				EA1FE33529C36CE90018E13A /* ViewController.swift in Sources */,
+				EA1FE38529C372B90018E13A /* AddTransformationViewController.swift in Sources */,
+				EA1FE34A29C36DBD0018E13A /* ProfileListViewViewModel.swift in Sources */,
 				EA1FE33129C36CE90018E13A /* AppDelegate.swift in Sources */,
+				EA1FE38F29C374310018E13A /* ChallengeViewController.swift in Sources */,
+				EA1FE39129C3743D0018E13A /* NotesViewController.swift in Sources */,
+				EA1FE36429C370320018E13A /* MainTabBarController.swift in Sources */,
+				EA1FE37729C371950018E13A /* MyProgramViewController.swift in Sources */,
+				EA1FE38D29C374160018E13A /* LiftingProgressViewController.swift in Sources */,
+				EA1FE39329C374450018E13A /* SettingsViewController.swift in Sources */,
+				EA1FE38329C3728D0018E13A /* CustomCollectionViewCell.swift in Sources */,
+				EA1FE37029C371250018E13A /* TrainingProgramViewController.swift in Sources */,
+				EA1FE34E29C36DE00018E13A /* HomeViewViewModel.swift in Sources */,
+				EA1FE38A29C3735C0018E13A /* AddTransformationView.swift in Sources */,
+				EA1FE35429C36E690018E13A /* ProfileCollectionModel.swift in Sources */,
 				EA1FE33329C36CE90018E13A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +443,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EA1FE33629C36CE90018E13A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA1FE33729C36CE90018E13A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA1FE33B29C36CEA0018E13A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,9 +577,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CompleteTraining/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "Complete Training wants to use your motion for stepcounter";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,9 +604,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CompleteTraining/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "Complete Training wants to use your motion for stepcounter";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

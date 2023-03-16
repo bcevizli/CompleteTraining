@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeCollectionViewCellView: UICollectionViewCell {
+class HomeCollectionViewCell: UICollectionViewCell {
     
     static let cellIdentifier = "HomeCollectionViewCell"
     
@@ -44,11 +44,11 @@ class HomeCollectionViewCellView: UICollectionViewCell {
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor),
+            imageView.heightAnchor.constraint(equalToConstant: 248),
         ])
         
         // Set up bottom title label
-        bottomTitleLabel.font = UIFont.systemFont(ofSize: 13)
+        bottomTitleLabel.font = UIFont.systemFont(ofSize: 18)
         bottomTitleLabel.textAlignment = .center
         bottomTitleLabel.numberOfLines = 1
         contentView.addSubview(bottomTitleLabel)

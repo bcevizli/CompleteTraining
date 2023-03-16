@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+struct ProfileCollectionViewCellViewModel {
+    
+    let profileImageName: String
+    let profileBottomTitle: String
+}

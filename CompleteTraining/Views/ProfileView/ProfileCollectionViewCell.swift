@@ -8,7 +8,7 @@
 import UIKit
 
 /// Single cell for a character
-final class ProfileCollectionViewCellView: UICollectionViewCell {
+final class ProfileCollectionViewCell: UICollectionViewCell {
     
     static let cellIdentifier = "ProfileCollectionViewCell"
     
@@ -36,15 +36,15 @@ final class ProfileCollectionViewCellView: UICollectionViewCell {
     
     private func setUpLayer() {
         
-        contentView.layer.cornerRadius = 8
         contentView.layer.shadowColor = UIColor.label.cgColor
         contentView.layer.cornerRadius = 4
-        contentView.layer.shadowOffset = CGSize(width: -4, height: 4)
+        contentView.layer.shadowOffset = CGSize(width: -3, height: 3)
         contentView.layer.shadowOpacity = 0.3
         
         // Set up image view
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 4
         imageView.alpha = 1
         contentView.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
