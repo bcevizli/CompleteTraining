@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTransformationView" customModule="CompleteTraining" customModuleProvider="target">
             <connections>
-                <outlet property="transformationLabel" destination="LrU-VF-SR2" id="rfE-uO-PVP"/>
+                <outlet property="transformationLabel" destination="LrU-VF-SR2" id="jtp-d0-pnq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

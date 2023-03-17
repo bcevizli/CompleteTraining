@@ -34,6 +34,7 @@ class StandaloneNotesViewController: UITableViewController {
         cell.textLabel?.text = note.title
         return cell
     }
+    
     @objc func addNote() {
         let vc = AddStandAloneNoteViewController()
         vc.delegate = self
@@ -45,7 +46,7 @@ extension StandaloneNotesViewController: AddStandAloneNoteViewControllerDelegate
         let note = Note(title: title, text: text)
         notes.append(note)
         tableView.reloadData()
-
+        
         
     }
 }

@@ -11,11 +11,10 @@ import UIKit
 class AddTransformationView : UIView {
     
     
-    
     @IBOutlet weak var transformationLabel: UILabel!
     
     
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         viewInit()
@@ -26,7 +25,7 @@ class AddTransformationView : UIView {
         viewInit()
     }
     func viewInit() {
-   
+        
         let xibFile = Bundle.main.loadNibNamed("AddTransformationView", owner: self, options: nil)![0] as! UIView
         addSubview(xibFile)
         xibFile.frame = self.bounds
@@ -35,16 +34,16 @@ class AddTransformationView : UIView {
     func loadViewFromNib(nibName: String) -> UIView {
         
         let bundle = Bundle(for: type(of: self))
-                let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
-                let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
-                view.frame = bounds
-                view.autoresizingMask = [
-                    UIView.AutoresizingMask.flexibleWidth,
-                    UIView.AutoresizingMask.flexibleHeight
-                ]
-                addSubview(view)
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
+        let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
+        view.frame = bounds
+        view.autoresizingMask = [
+            UIView.AutoresizingMask.flexibleWidth,
+            UIView.AutoresizingMask.flexibleHeight
+        ]
+        addSubview(view)
         return view
-                
+        
     }
 }
 
