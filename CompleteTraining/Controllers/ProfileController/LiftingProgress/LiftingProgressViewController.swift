@@ -9,8 +9,6 @@ import UIKit
 
 class LiftingProgressViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let button = UIButton(frame: CGRect(x: 135, y: 120, width: 130, height: 50))
-    
     var tableView: UITableView!
     
     var liftingRecords: [String] = ["1", "2", "3", "4", "5"]
@@ -22,14 +20,11 @@ class LiftingProgressViewController: UIViewController, UITableViewDataSource, UI
         title = "Lifting Progress"
         navigationController?.navigationBar.prefersLargeTitles = false
         
-        button.backgroundColor = .systemBrown
-        button.setTitle("Add", for: .normal)
-        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: .add, style: .done, target: self, action: #selector(buttonAction))
         
-        self.view.addSubview(button)
         
         // Set up the table view
-        tableView = UITableView(frame: CGRect(x: 0, y: 200, width: view.bounds.width, height: view.bounds.height))
+        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
         tableView.dataSource = self
         tableView.delegate = self
         view.addSubview(tableView)
@@ -74,9 +69,8 @@ class LiftingProgressViewController: UIViewController, UITableViewDataSource, UI
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
-        let editAction = UITableViewRowAction(style: .default, title: "Edit", handler: { (action, indexPath) in
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let editAction = UIContextualAction(style: .destructive, title: "Edit") {  (contextualAction, view, boolValue) in
             let alert = UIAlertController(title: "", message: "Edit list item", preferredStyle: .alert)
             alert.addTextField(configurationHandler: { (textField) in
                 textField.text = self.liftingRecords[indexPath.row]
@@ -87,18 +81,17 @@ class LiftingProgressViewController: UIViewController, UITableViewDataSource, UI
             }))
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             self.present(alert, animated: false)
-        })
-        
-        let deleteAction = UITableViewRowAction(style: .default, title: "Delete", handler: { (action, indexPath) in
+        }
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete", handler: { (contextualAction, view, boolValue) in
             self.liftingRecords.remove(at: indexPath.row)
-            tableView.reloadData()
+            self.tableView.reloadData()
         })
+                
+        let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
         
-        return [deleteAction, editAction]
+        return swipeActions
     }
-    
-    
-    
+   
 }
 
 class TwoLabelCell: UITableViewCell {
@@ -127,6 +120,6 @@ class TwoLabelCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+  
 }
 
