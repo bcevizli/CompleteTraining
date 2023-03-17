@@ -14,98 +14,90 @@ class LiftingProgressViewController: UIViewController, UITableViewDataSource, UI
     var tableView: UITableView!
     
     var liftingRecords: [String] = ["1", "2", "3", "4", "5"]
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Lifting Progress"
         navigationController?.navigationBar.prefersLargeTitles = false
         
-          button.backgroundColor = .systemBrown
-          button.setTitle("Edit", for: .normal)
+        button.backgroundColor = .systemBrown
+        button.setTitle("Add", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-
-          self.view.addSubview(button)
+        
+        self.view.addSubview(button)
         
         // Set up the table view
-               tableView = UITableView(frame: CGRect(x: 0, y: 200, width: view.bounds.width, height: view.bounds.height))
-               tableView.dataSource = self
-               tableView.delegate = self
-               view.addSubview(tableView)
-
-               // Register the cell class
-               tableView.register(TwoLabelCell.self, forCellReuseIdentifier: "TwoLabelCell")
-
+        tableView = UITableView(frame: CGRect(x: 0, y: 200, width: view.bounds.width, height: view.bounds.height))
+        tableView.dataSource = self
+        tableView.delegate = self
+        view.addSubview(tableView)
+        
+        // Register the cell class
+        tableView.register(TwoLabelCell.self, forCellReuseIdentifier: "TwoLabelCell")
+        
     }
     
     @objc func buttonAction(sender: UIButton!) {
-        if (tableView.isEditing == true) {
-            tableView.isEditing = false
-        } else {
-            tableView.isEditing = true
-        }
+        print("buton")
+        
     }
-    // Table view data source methods
-       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           return liftingRecords.count // Replace with the number of rows you want
-       }
-
-       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           let cell = tableView.dequeueReusableCell(withIdentifier: "TwoLabelCell", for: indexPath) as! TwoLabelCell
-
-           // Create the labels
-           let label1 = UILabel(frame: CGRect(x: 0, y: 0, width: cell.bounds.width/2, height: cell.bounds.height))
-           label1.text = "Label 1"
-           cell.addSubview(label1)
-
-           let label2 = UILabel(frame: CGRect(x: cell.bounds.width/2, y: 0, width: cell.bounds.width/2, height: cell.bounds.height))
-           label2.text = liftingRecords[indexPath.row]
-           cell.addSubview(label2)
-
-           return cell
-       }
-
-       // Table view delegate methods
-       func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           return 44 // Replace with the height you want for each row
-       }
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .insert
     }
+    // Table view data source methods
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return liftingRecords.count // Replace with the number of rows you want
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TwoLabelCell", for: indexPath) as! TwoLabelCell
+        
+        // Create the labels
+        let label1 = UILabel(frame: CGRect(x: 0, y: 0, width: cell.bounds.width/2, height: cell.bounds.height))
+        label1.text = "Label 1"
+        cell.addSubview(label1)
+        
+        let label2 = UILabel(frame: CGRect(x: cell.bounds.width/2, y: 0, width: cell.bounds.width/2, height: cell.bounds.height))
+        label2.text = liftingRecords[indexPath.row]
+        cell.addSubview(label2)
+        
+        return cell
+    }
+    
+    // Table view delegate methods
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44 // Replace with the height you want for each row
+    }
+    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .insert {
-            tableView.beginUpdates()
-//            liftingRecords.insert("New Record", at: indexPath.row)
-//            tableView.insertRows(at: [indexPath], with: .fade)
-            
-            let vc = UIAlertController(title: "Enter Value", message: nil, preferredStyle: .alert)
-            vc.addTextField()
-            
-            let submitAction = UIAlertAction(title: "Submit", style: .default) { _ in
-                
-                let textObj = vc.textFields![0]
-
-                self.liftingRecords.insert(textObj.text!, at: indexPath.row)
-                self.tableView.insertRows(at: [indexPath], with: .fade)
-                tableView.endUpdates()
-
-            }
-            vc.addAction(submitAction)
-            present(vc, animated: true)
-            
-        }
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
-        if editingStyle == .delete {
-            tableView.beginUpdates()
-            liftingRecords.remove(at: indexPath.row)
-            tableView.insertRows(at: [indexPath], with: .fade)
-        }
+        let editAction = UITableViewRowAction(style: .default, title: "Edit", handler: { (action, indexPath) in
+            let alert = UIAlertController(title: "", message: "Edit list item", preferredStyle: .alert)
+            alert.addTextField(configurationHandler: { (textField) in
+                textField.text = self.liftingRecords[indexPath.row]
+            })
+            alert.addAction(UIAlertAction(title: "Update", style: .default, handler: { (updateAction) in
+                self.liftingRecords[indexPath.row] = alert.textFields!.first!.text!
+                self.tableView.reloadRows(at: [indexPath], with: .fade)
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            self.present(alert, animated: false)
+        })
+        
+        let deleteAction = UITableViewRowAction(style: .default, title: "Delete", handler: { (action, indexPath) in
+            self.liftingRecords.remove(at: indexPath.row)
+            tableView.reloadData()
+        })
+        
+        return [deleteAction, editAction]
     }
+    
+    
     
 }
 
@@ -137,3 +129,4 @@ class TwoLabelCell: UITableViewCell {
     }
     
 }
+
