@@ -41,6 +41,9 @@
 		EA1FE39129C3743D0018E13A /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE39029C3743D0018E13A /* NotesViewController.swift */; };
 		EA1FE39329C374450018E13A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE39229C374450018E13A /* SettingsViewController.swift */; };
 		EA1FE39529C374E10018E13A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE39429C374E10018E13A /* Extension.swift */; };
+		EAC17A5829C3DE5600F7C951 /* TrainingNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A5729C3DE5600F7C951 /* TrainingNotesViewController.swift */; };
+		EAC17A5A29C3DE6D00F7C951 /* StandaloneNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A5929C3DE6D00F7C951 /* StandaloneNotesViewController.swift */; };
+		EAC17A5C29C488BD00F7C951 /* AddStandaloneNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A5B29C488BD00F7C951 /* AddStandaloneNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		EA1FE39029C3743D0018E13A /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		EA1FE39229C374450018E13A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EA1FE39429C374E10018E13A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EAC17A5729C3DE5600F7C951 /* TrainingNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingNotesViewController.swift; sourceTree = "<group>"; };
+		EAC17A5929C3DE6D00F7C951 /* StandaloneNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandaloneNotesViewController.swift; sourceTree = "<group>"; };
+		EAC17A5B29C488BD00F7C951 /* AddStandaloneNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStandaloneNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				EA1FE39029C3743D0018E13A /* NotesViewController.swift */,
+				EAC17A5629C3DE2400F7C951 /* NotesLists */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -335,6 +342,16 @@
 			path = AddTransformationView;
 			sourceTree = "<group>";
 		};
+		EAC17A5629C3DE2400F7C951 /* NotesLists */ = {
+			isa = PBXGroup;
+			children = (
+				EAC17A5729C3DE5600F7C951 /* TrainingNotesViewController.swift */,
+				EAC17A5929C3DE6D00F7C951 /* StandaloneNotesViewController.swift */,
+				EAC17A5B29C488BD00F7C951 /* AddStandaloneNoteViewController.swift */,
+			);
+			path = NotesLists;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -406,9 +423,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC17A5829C3DE5600F7C951 /* TrainingNotesViewController.swift in Sources */,
 				EA1FE35B29C36F2B0018E13A /* HomeCollectionViewCell.swift in Sources */,
 				EA1FE37F29C371EC0018E13A /* PersonalInformationViewController.swift in Sources */,
 				EA1FE38129C3725B0018E13A /* TransformationViewController.swift in Sources */,
+				EAC17A5A29C3DE6D00F7C951 /* StandaloneNotesViewController.swift in Sources */,
+				EAC17A5C29C488BD00F7C951 /* AddStandaloneNoteViewController.swift in Sources */,
 				EA1FE35029C36DF10018E13A /* HomeCollectionViewCellViewModel.swift in Sources */,
 				EA1FE34C29C36DD10018E13A /* ProfileCollectionViewCellViewModel.swift in Sources */,
 				EA1FE37D29C371D80018E13A /* StretchingViewController.swift in Sources */,
