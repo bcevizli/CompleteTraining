@@ -55,7 +55,7 @@ class TrainingProgramViewController: UIViewController, UITableViewDelegate, UITa
 
 
         let marginguide = cell.contentView.layoutMarginsGuide
-
+        
             cell.imageView?.topAnchor.constraint(equalTo: marginguide.topAnchor).isActive = true
             cell.imageView?.leadingAnchor.constraint(equalTo: marginguide.leadingAnchor).isActive = true
             cell.imageView?.heightAnchor.constraint(equalToConstant: 120).isActive = true

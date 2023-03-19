@@ -13,7 +13,7 @@ class MobilityViewController: UIViewController, UITableViewDelegate, UITableView
     
     private let tableView = UITableView()
     let programList: [String] = ["Spine", "Legs", "Shoulders", "Neck"]
-    let programImages = [UIImage(named: "myProgram"), UIImage(named: "mobility"), UIImage(named: "lifting"), UIImage(named: "stretching"), UIImage(named: "personalInformation")]
+    let programImages = [UIImage(named: "spine"), UIImage(named: "legs"), UIImage(named: "shoulders"), UIImage(named: "neck")]
     let cellReuseIdentifier = "cell"
     
     
@@ -75,15 +75,13 @@ class MobilityViewController: UIViewController, UITableViewDelegate, UITableView
         var viewController: SFSafariViewController!
            switch indexPath.row {
            case 0:
-               viewController = SFSafariViewController(url: URL(string: "https://www.instagram.com/")!)
+               viewController = SFSafariViewController(url: URL(string: "https://www.instagram.com/p/B932lVulPyp/")!)
            case 1:
-               viewController = SFSafariViewController(url: URL(string: "https://www.instagram.com/")!)
+               viewController = SFSafariViewController(url: URL(string: "https://www.instagram.com/p/B-SDiwQlaPN/")!)
            case 2:
-               viewController = SFSafariViewController(url: URL(string: "https://www.instagram.com/")!)
+               viewController = SFSafariViewController(url: URL(string: "https://www.instagram.com/p/B-EtjQ4lfPs/")!)
            case 3:
-               viewController = SFSafariViewController(url: URL(string: "https://www.instagram.com/")!)
-           case 4:
-               viewController = SFSafariViewController(url: URL(string: "https://www.instagram.com/")!)
+               viewController = SFSafariViewController(url: URL(string: "https://www.instagram.com/p/CBN-DbHFqCw/")!)
            default:
                break
            }
