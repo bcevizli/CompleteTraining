@@ -16,10 +16,12 @@ class MyProgramViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "My Program"
         
-  
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
     }
     
-
+    @objc func didTapAdd() {
+        print("Create a new program")
+    }
 
 }
 

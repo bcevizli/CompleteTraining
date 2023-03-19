@@ -23,7 +23,7 @@ class TrainingProgramViewController: UIViewController, UITableViewDelegate, UITa
         navigationItem.largeTitleDisplayMode = .never
         view.backgroundColor = .systemBackground
           
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+        
         view.addSubview(tableView)
         
         tableView.frame = view.bounds
@@ -35,9 +35,7 @@ class TrainingProgramViewController: UIViewController, UITableViewDelegate, UITa
         tableView.center = view.center
     }
     
-    @objc func didTapAdd() {
-        print("add tapped")
-    }
+  
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
