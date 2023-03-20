@@ -5,14 +5,14 @@
 //  Created by Adem Burak Cevizli on 16.03.2023.
 //
 
+import StoreKit
+import SafariServices
 import SwiftUI
 import UIKit
 
 class SettingsViewController: UIViewController {
     
-    private let settingsSwiftUIController = UIHostingController(rootView: SettingsView(viewModel: SettingsViewViewModel(cellViewModels: SettingsOption.allCases.compactMap({
-        return SettingsCellViewModel(type: $0)
-    }))))
+    private var settingsSwiftUIController: UIHostingController<SettingsView>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,11 @@ class SettingsViewController: UIViewController {
         addSwiftUIController()
     }
     private func addSwiftUIController() {
+        let settingsSwiftUIController = UIHostingController(rootView: SettingsView(viewModel: SettingsViewViewModel(cellViewModels: SettingsOption.allCases.compactMap({
+            return SettingsCellViewModel(type: $0) { [weak self] option in
+                self?.handleTap(option: option)
+            }
+        }))))
         addChild(settingsSwiftUIController)
         settingsSwiftUIController.didMove(toParent: self)
         view.addSubview(settingsSwiftUIController.view)
@@ -33,6 +38,19 @@ class SettingsViewController: UIViewController {
             settingsSwiftUIController.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
             
         ])
+        self.settingsSwiftUIController = settingsSwiftUIController
     }
-    
+    private func handleTap(option: SettingsOption) {
+        guard Thread.current.isMainThread else {
+            return
+        }
+        if let url = option.targerUrl {
+            let vc = SFSafariViewController(url: url)
+            present(vc, animated: true)
+        } else if option == .rateApp {
+                if let windowScene = view.window?.windowScene {
+                    SKStoreReviewController.requestReview(in: windowScene)
+            }
+        }
+    }
 }

@@ -16,6 +16,25 @@ enum SettingsOption: CaseIterable {
     case socialMedia
     case viewCode
     
+    var targerUrl: URL? {
+        switch self {
+        case .rateApp:
+            return nil
+        case .contactUs:
+            return URL(string: "https://www.instagram.com/juicetrainings/")
+        case .terms:
+            return URL(string: "https://www.instagram.com/juicetrainings/")
+        case .privacy:
+            return URL(string: "https://www.instagram.com/juicetrainings/")
+        case .apiReference:
+            return URL(string: "https://www.instagram.com/juicetrainings/")
+        case .socialMedia:
+            return URL(string: "https://www.instagram.com/juicetrainings/")
+        case .viewCode:
+            return URL(string: "https://github.com/bcevizli/CompleteTraining")
+        }
+    }
+    
     var displayTitle: String {
         switch self {
         case .rateApp:

@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct SettingsCellViewModel: Identifiable, Hashable {
+struct SettingsCellViewModel: Identifiable {
     let id = UUID()
     
     public var image: UIImage? {
@@ -17,10 +17,12 @@ struct SettingsCellViewModel: Identifiable, Hashable {
         return type.displayTitle
     }
     
-    private let type: SettingsOption
+    public let type: SettingsOption
+    public let onTapHandler: (SettingsOption) -> Void
     
-    init(type: SettingsOption) {
+    init(type: SettingsOption, onTapHandler: @escaping (SettingsOption) -> Void) {
         self.type = type
+        self.onTapHandler = onTapHandler
     }
     public var iconContainerColor: UIColor {
         return type.iconContainerColor
