@@ -44,6 +44,10 @@
 		EAC17A5829C3DE5600F7C951 /* TrainingNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A5729C3DE5600F7C951 /* TrainingNotesViewController.swift */; };
 		EAC17A5A29C3DE6D00F7C951 /* StandaloneNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A5929C3DE6D00F7C951 /* StandaloneNotesViewController.swift */; };
 		EAC17A5C29C488BD00F7C951 /* AddStandaloneNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A5B29C488BD00F7C951 /* AddStandaloneNoteViewController.swift */; };
+		EAC17A5F29C8D13700F7C951 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A5E29C8D13700F7C951 /* SettingsViewViewModel.swift */; };
+		EAC17A6129C8D1BF00F7C951 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A6029C8D1BF00F7C951 /* SettingsCellViewModel.swift */; };
+		EAC17A6329C8D23B00F7C951 /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A6229C8D23B00F7C951 /* SettingsOption.swift */; };
+		EAC17A6629C8D7D100F7C951 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A6529C8D7D100F7C951 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,10 @@
 		EAC17A5729C3DE5600F7C951 /* TrainingNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingNotesViewController.swift; sourceTree = "<group>"; };
 		EAC17A5929C3DE6D00F7C951 /* StandaloneNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandaloneNotesViewController.swift; sourceTree = "<group>"; };
 		EAC17A5B29C488BD00F7C951 /* AddStandaloneNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStandaloneNoteViewController.swift; sourceTree = "<group>"; };
+		EAC17A5E29C8D13700F7C951 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
+		EAC17A6029C8D1BF00F7C951 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
+		EAC17A6229C8D23B00F7C951 /* SettingsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOption.swift; sourceTree = "<group>"; };
+		EAC17A6529C8D7D100F7C951 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +152,7 @@
 		EA1FE34529C36D290018E13A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EAC17A5D29C8D11900F7C951 /* Settings */,
 				EA1FE34929C36DBD0018E13A /* ProfileListViewViewModel.swift */,
 				EA1FE34B29C36DD00018E13A /* ProfileCollectionViewCellViewModel.swift */,
 				EA1FE34D29C36DE00018E13A /* HomeViewViewModel.swift */,
@@ -164,10 +173,10 @@
 		EA1FE34729C36D3E0018E13A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EAC17A6429C8D79B00F7C951 /* SettingsSwiftUIView */,
 				EA1FE38729C372ED0018E13A /* AddTransformationView */,
 				EA1FE35529C36E990018E13A /* HomeView */,
 				EA1FE35629C36E9F0018E13A /* ProfileView */,
-				EA1FE35729C36EA70018E13A /* SettingsView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,13 +207,6 @@
 				EA1FE35E29C36F5B0018E13A /* ProfileCollectionViewCell.swift */,
 			);
 			path = ProfileView;
-			sourceTree = "<group>";
-		};
-		EA1FE35729C36EA70018E13A /* SettingsView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SettingsView;
 			sourceTree = "<group>";
 		};
 		EA1FE36029C36FF90018E13A /* TabBarController */ = {
@@ -352,6 +354,24 @@
 			path = NotesLists;
 			sourceTree = "<group>";
 		};
+		EAC17A5D29C8D11900F7C951 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EAC17A5E29C8D13700F7C951 /* SettingsViewViewModel.swift */,
+				EAC17A6029C8D1BF00F7C951 /* SettingsCellViewModel.swift */,
+				EAC17A6229C8D23B00F7C951 /* SettingsOption.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EAC17A6429C8D79B00F7C951 /* SettingsSwiftUIView */ = {
+			isa = PBXGroup;
+			children = (
+				EAC17A6529C8D7D100F7C951 /* SettingsView.swift */,
+			);
+			path = SettingsSwiftUIView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,6 +448,7 @@
 				EA1FE37F29C371EC0018E13A /* PersonalInformationViewController.swift in Sources */,
 				EA1FE38129C3725B0018E13A /* TransformationViewController.swift in Sources */,
 				EAC17A5A29C3DE6D00F7C951 /* StandaloneNotesViewController.swift in Sources */,
+				EAC17A5F29C8D13700F7C951 /* SettingsViewViewModel.swift in Sources */,
 				EAC17A5C29C488BD00F7C951 /* AddStandaloneNoteViewController.swift in Sources */,
 				EA1FE35029C36DF10018E13A /* HomeCollectionViewCellViewModel.swift in Sources */,
 				EA1FE34C29C36DD10018E13A /* ProfileCollectionViewCellViewModel.swift in Sources */,
@@ -435,6 +456,7 @@
 				EA1FE35229C36E5B0018E13A /* HomeCollectionModel.swift in Sources */,
 				EA1FE39529C374E10018E13A /* Extension.swift in Sources */,
 				EA1FE35F29C36F5B0018E13A /* ProfileCollectionViewCell.swift in Sources */,
+				EAC17A6329C8D23B00F7C951 /* SettingsOption.swift in Sources */,
 				EA1FE36629C370620018E13A /* HomeViewController.swift in Sources */,
 				EA1FE37B29C371CD0018E13A /* LiftingViewController.swift in Sources */,
 				EA1FE37929C371BD0018E13A /* MobilityViewController.swift in Sources */,
@@ -457,6 +479,8 @@
 				EA1FE38A29C3735C0018E13A /* AddTransformationView.swift in Sources */,
 				EA1FE35429C36E690018E13A /* ProfileCollectionModel.swift in Sources */,
 				EA1FE33329C36CE90018E13A /* SceneDelegate.swift in Sources */,
+				EAC17A6129C8D1BF00F7C951 /* SettingsCellViewModel.swift in Sources */,
+				EAC17A6629C8D7D100F7C951 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

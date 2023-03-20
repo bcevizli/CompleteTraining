@@ -7,54 +7,65 @@
 
 import UIKit
 
-class PersonalInformationViewController: UIViewController, UITextFieldDelegate {
-    
-    let lbl: UILabel = {
-        let lbl = UILabel(frame: CGRect(x: 50, y: 100, width: 100, height: 30))
-        lbl.text = "Label"
-        return lbl
-    }()
-    
-    let textF: UITextField = {
-        let textF = UITextField(frame: CGRect(x: 50, y: 150, width: 100, height: 30))
-        textF.borderStyle = .roundedRect
-        textF.isHidden = true
-        return textF
-    }()
-    
+class PersonalInformationViewController: UIViewController, UITextViewDelegate {
+
+    // User profile properties
+    var name: String?
+    var age: Int?
+    var height: Double?
+    var weight: Double?
+
+    // Outlets
+    var nameField: UITextField!
+    var ageField: UITextField!
+    var heightField: UITextField!
+    var weightField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
-        title = "Personal Information"
-        
-        textF.delegate = self
-        
-        view.addSubview(lbl)
-        view.addSubview(textF)
-        
-        lbl.isUserInteractionEnabled = true
-        
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(lblTapped))
-        tapGesture.numberOfTapsRequired = 1
-        lbl.addGestureRecognizer(tapGesture)
-    }
-    
-    @objc func lblTapped() {
-        lbl.isHidden = true
-        textF.isHidden = false
-        textF.text = "text here"
-        
-    }
-    
-    func textFieldShouldReturn(_ userText: UITextField) -> Bool {
-        textF.resignFirstResponder()
-        textF.isHidden = true
-        lbl.isHidden = false
-        lbl.text = textF.text
 
-        return true
+        // Create and configure name field
+        nameField = UITextField(frame: CGRect(x: 20, y: 150, width: 200, height: 30))
+        nameField.placeholder = "Enter your name"
+        nameField.text = name
+        view.addSubview(nameField)
+
+        // Create and configure age field
+        ageField = UITextField(frame: CGRect(x: 20, y: 200, width: 200, height: 30))
+        ageField.placeholder = "Enter your age"
+        ageField.keyboardType = .numberPad
+        if let age = age {
+            ageField.text = String(age)
+        }
+        view.addSubview(ageField)
+
+        // Create and configure height field
+        heightField = UITextField(frame: CGRect(x: 20, y: 250, width: 200, height: 30))
+        heightField.placeholder = "Enter your height in cm"
+        heightField.keyboardType = .decimalPad
+        if let height = height {
+            heightField.text = String(height)
+        }
+        view.addSubview(heightField)
+
+        // Create and configure weight field
+        weightField = UITextField(frame: CGRect(x: 20, y: 300, width: 200, height: 30))
+        weightField.placeholder = "Enter your weight in kg"
+        weightField.keyboardType = .decimalPad
+        if let weight = weight {
+            weightField.text = String(weight)
+        }
+        view.addSubview(weightField)
     }
-    
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        // Update user profile properties with edited values
+        name = nameField.text
+        age = Int(ageField.text ?? "0")
+        height = Double(heightField.text ?? "0")
+        weight = Double(weightField.text ?? "0")
+    }
     
 }
