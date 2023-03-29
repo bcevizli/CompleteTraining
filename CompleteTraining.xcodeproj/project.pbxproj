@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EA1FE33129C36CE90018E13A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE33029C36CE90018E13A /* AppDelegate.swift */; };
 		EA1FE33329C36CE90018E13A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE33229C36CE90018E13A /* SceneDelegate.swift */; };
-		EA1FE33529C36CE90018E13A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE33429C36CE90018E13A /* ViewController.swift */; };
 		EA1FE33A29C36CEA0018E13A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1FE33929C36CEA0018E13A /* Assets.xcassets */; };
 		EA1FE33D29C36CEA0018E13A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1FE33B29C36CEA0018E13A /* LaunchScreen.storyboard */; };
 		EA1FE34A29C36DBD0018E13A /* ProfileListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1FE34929C36DBD0018E13A /* ProfileListViewViewModel.swift */; };
@@ -56,7 +55,6 @@
 		EA1FE32D29C36CE90018E13A /* CompleteTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompleteTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1FE33029C36CE90018E13A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA1FE33229C36CE90018E13A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA1FE33429C36CE90018E13A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA1FE33929C36CEA0018E13A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA1FE33C29C36CEA0018E13A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA1FE33E29C36CEA0018E13A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			children = (
 				EA1FE33029C36CE90018E13A /* AppDelegate.swift */,
 				EA1FE33229C36CE90018E13A /* SceneDelegate.swift */,
-				EA1FE33429C36CE90018E13A /* ViewController.swift */,
 				EA1FE33929C36CEA0018E13A /* Assets.xcassets */,
 				EA1FE33B29C36CEA0018E13A /* LaunchScreen.storyboard */,
 				EA1FE39429C374E10018E13A /* Extension.swift */,
@@ -486,7 +483,6 @@
 				EA1FE36829C370870018E13A /* ProfileViewController.swift in Sources */,
 				EA1FE35D29C36F4B0018E13A /* ProfileListView.swift in Sources */,
 				EA1FE35929C36F030018E13A /* HomeView.swift in Sources */,
-				EA1FE33529C36CE90018E13A /* ViewController.swift in Sources */,
 				EA1FE38529C372B90018E13A /* AddTransformationViewController.swift in Sources */,
 				EA1FE34A29C36DBD0018E13A /* ProfileListViewViewModel.swift in Sources */,
 				EA1FE33129C36CE90018E13A /* AppDelegate.swift in Sources */,

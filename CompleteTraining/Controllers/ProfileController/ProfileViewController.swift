@@ -43,9 +43,12 @@ final class ProfileViewController: UIViewController, ProfileListViewDelegate {
     }
     // MARK: - RMCharacterListViewDelegate
     func listView() {
+        let popUpVC = TodaysProgramPopUpViewController()
+        popUpVC.modalPresentationStyle = .overCurrentContext
+        present(popUpVC, animated: true, completion: nil)
         
-        let controller = TrainingProgramViewController()
-        navigationController?.pushViewController(controller, animated: true)
+//        let controller = TrainingProgramViewController()
+//        navigationController?.pushViewController(controller, animated: true)
     }
     func listView1() {
         let controller = TransformationViewController()

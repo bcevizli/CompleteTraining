@@ -69,7 +69,5 @@ extension HomeViewViewModel: UICollectionViewDataSource, UICollectionViewDelegat
         } else if indexPath.row == 3 {
             delegate?.didSelectHomeCell3()
         }
-
     }
-    
 }

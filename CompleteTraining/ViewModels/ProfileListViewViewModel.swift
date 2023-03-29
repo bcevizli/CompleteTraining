@@ -25,12 +25,8 @@ final class ProfileListViewViewModel: NSObject{
     public weak var delegate: ProfileListViewViewModelDelegate?
     
     let viewModel = ProfileCollectionModel()
-
-
-    
     
 }
-
 
 // MARK: - CollectionView
 
@@ -78,8 +74,6 @@ extension ProfileListViewViewModel: UICollectionViewDataSource, UICollectionView
         } else if indexPath.row == 5 {
             delegate?.didSelectCell5()
         }
-        
     }
-    
 }
 

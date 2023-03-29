@@ -47,7 +47,6 @@ final class HomeView: UIView {
         collectionView.dataSource = viewModel
         collectionView.showsHorizontalScrollIndicator = false
         addSubview(collectionView)
-        collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.cellIdentifier)
         addConstraint()
     }
     required init?(coder: NSCoder) {

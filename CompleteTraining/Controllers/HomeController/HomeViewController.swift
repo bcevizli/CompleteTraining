@@ -9,7 +9,6 @@ import UIKit
 import CoreMotion
 
 final class HomeViewController: UIViewController, PopUpDidSelectDelegate {
-    
         
     private let homeView = HomeView()
     
@@ -62,18 +61,21 @@ final class HomeViewController: UIViewController, PopUpDidSelectDelegate {
     }
     
     func didSelectTodaysChallange() {
-        let controller = TodaysProgramPopUpViewController()
-        navigationController?.pushViewController(controller, animated: true)
+        let popUpVC = TodaysProgramPopUpViewController()
+        popUpVC.modalPresentationStyle = .overCurrentContext
+        present(popUpVC, animated: true, completion: nil)
     }
     
     func didSelectLastNote() {
-        let controller = TodaysProgramPopUpViewController()
-        navigationController?.pushViewController(controller, animated: true)
+        let popUpVC = TodaysProgramPopUpViewController()
+        popUpVC.modalPresentationStyle = .overCurrentContext
+        present(popUpVC, animated: true, completion: nil)
     }
     
     func didSelectCurrentLifts() {
-        let controller = TodaysProgramPopUpViewController()
-        navigationController?.pushViewController(controller, animated: true)
+        let popUpVC = TodaysProgramPopUpViewController()
+        popUpVC.modalPresentationStyle = .overCurrentContext
+        present(popUpVC, animated: true, completion: nil)
     }
     
 }

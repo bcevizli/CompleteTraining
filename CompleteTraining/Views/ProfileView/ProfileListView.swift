@@ -43,9 +43,7 @@ final class ProfileListView: UIView {
         super.init(frame: frame)
         
         addSubview(collectionView)
-        
         addConstraints()
-        
         viewModel.delegate = self
         setUpCollectionView()
         translatesAutoresizingMaskIntoConstraints = false
