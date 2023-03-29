@@ -48,6 +48,8 @@
 		EAC17A6129C8D1BF00F7C951 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A6029C8D1BF00F7C951 /* SettingsCellViewModel.swift */; };
 		EAC17A6329C8D23B00F7C951 /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A6229C8D23B00F7C951 /* SettingsOption.swift */; };
 		EAC17A6629C8D7D100F7C951 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC17A6529C8D7D100F7C951 /* SettingsView.swift */; };
+		EAFE982429CEF38D001F7494 /* TodaysProgramPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE982329CEF38D001F7494 /* TodaysProgramPopUpView.swift */; };
+		EAFE982729CEF5E2001F7494 /* TodaysProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE982629CEF5E2001F7494 /* TodaysProgramViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		EAC17A6029C8D1BF00F7C951 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
 		EAC17A6229C8D23B00F7C951 /* SettingsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOption.swift; sourceTree = "<group>"; };
 		EAC17A6529C8D7D100F7C951 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EAFE982329CEF38D001F7494 /* TodaysProgramPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysProgramPopUpView.swift; sourceTree = "<group>"; };
+		EAFE982629CEF5E2001F7494 /* TodaysProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysProgramViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,7 @@
 		EA1FE34729C36D3E0018E13A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EAFE982229CEF35E001F7494 /* PopUpViews */,
 				EAC17A6429C8D79B00F7C951 /* SettingsSwiftUIView */,
 				EA1FE38729C372ED0018E13A /* AddTransformationView */,
 				EA1FE35529C36E990018E13A /* HomeView */,
@@ -184,6 +189,7 @@
 		EA1FE34829C36D4D0018E13A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EAFE982529CEF5BD001F7494 /* PopUpControllers */,
 				EA1FE36029C36FF90018E13A /* TabBarController */,
 				EA1FE36129C370010018E13A /* HomeController */,
 				EA1FE36229C370090018E13A /* ProfileController */,
@@ -372,6 +378,22 @@
 			path = SettingsSwiftUIView;
 			sourceTree = "<group>";
 		};
+		EAFE982229CEF35E001F7494 /* PopUpViews */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE982329CEF38D001F7494 /* TodaysProgramPopUpView.swift */,
+			);
+			path = PopUpViews;
+			sourceTree = "<group>";
+		};
+		EAFE982529CEF5BD001F7494 /* PopUpControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE982629CEF5E2001F7494 /* TodaysProgramViewController.swift */,
+			);
+			path = PopUpControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -448,6 +470,7 @@
 				EA1FE37F29C371EC0018E13A /* PersonalInformationViewController.swift in Sources */,
 				EA1FE38129C3725B0018E13A /* TransformationViewController.swift in Sources */,
 				EAC17A5A29C3DE6D00F7C951 /* StandaloneNotesViewController.swift in Sources */,
+				EAFE982729CEF5E2001F7494 /* TodaysProgramViewController.swift in Sources */,
 				EAC17A5F29C8D13700F7C951 /* SettingsViewViewModel.swift in Sources */,
 				EAC17A5C29C488BD00F7C951 /* AddStandaloneNoteViewController.swift in Sources */,
 				EA1FE35029C36DF10018E13A /* HomeCollectionViewCellViewModel.swift in Sources */,
@@ -467,6 +490,7 @@
 				EA1FE38529C372B90018E13A /* AddTransformationViewController.swift in Sources */,
 				EA1FE34A29C36DBD0018E13A /* ProfileListViewViewModel.swift in Sources */,
 				EA1FE33129C36CE90018E13A /* AppDelegate.swift in Sources */,
+				EAFE982429CEF38D001F7494 /* TodaysProgramPopUpView.swift in Sources */,
 				EA1FE38F29C374310018E13A /* ChallengeViewController.swift in Sources */,
 				EA1FE39129C3743D0018E13A /* NotesViewController.swift in Sources */,
 				EA1FE36429C370320018E13A /* MainTabBarController.swift in Sources */,

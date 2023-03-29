@@ -8,10 +8,10 @@
 import UIKit
 
 final class ProfileViewController: UIViewController, ProfileListViewDelegate {
-
-    
     
     private let profileListView = ProfileListView()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,7 +19,7 @@ final class ProfileViewController: UIViewController, ProfileListViewDelegate {
         title = "Profile"
         setUpView()
         addSearchButton()
- 
+        
     }
     
     private func addSearchButton() {
@@ -39,13 +39,13 @@ final class ProfileViewController: UIViewController, ProfileListViewDelegate {
                                      profileListView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
                                      profileListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)])
         
-   
-        }
+        
+    }
     // MARK: - RMCharacterListViewDelegate
     func listView() {
         
-           let controller = TrainingProgramViewController()
-           navigationController?.pushViewController(controller, animated: true)
+        let controller = TrainingProgramViewController()
+        navigationController?.pushViewController(controller, animated: true)
     }
     func listView1() {
         let controller = TransformationViewController()

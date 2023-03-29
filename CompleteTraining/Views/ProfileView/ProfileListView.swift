@@ -22,8 +22,6 @@ final class ProfileListView: UIView {
     public weak var delegate: ProfileListViewDelegate?
     private let viewModel = ProfileListViewViewModel()
     
-
-    
     
     private let collectionView: UICollectionView = {
         

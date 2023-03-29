@@ -7,16 +7,20 @@
 
 import UIKit
 
-protocol HomeViewDelegate: AnyObject {
-    func listView()
+protocol PopUpDidSelectDelegate: AnyObject {
     
+    func didSelectTodaysProgram()
+    func didSelectTodaysChallange()
+    func didSelectLastNote()
+    func didSelectCurrentLifts()
 }
 
-class HomeView: UIView {
+final class HomeView: UIView {
     
-    public weak var delegate: HomeViewDelegate?
+    public weak var delegate: PopUpDidSelectDelegate?
     private let viewModel = HomeViewViewModel()
     
+
      let collectionView: UICollectionView = {
         
         let layout = UICollectionViewFlowLayout()
@@ -60,6 +64,24 @@ class HomeView: UIView {
         ])
     }
 }
-
+extension HomeView: PopupViewModelDelegate {
+    
+    func didSelectHomeCell() {
+        delegate?.didSelectTodaysProgram()
+    }
+    
+    func didSelectHomeCell1() {
+        delegate?.didSelectTodaysChallange()
+    }
+    
+    func didSelectHomeCell2() {
+        delegate?.didSelectLastNote()
+    }
+    
+    func didSelectHomeCell3() {
+        delegate?.didSelectCurrentLifts()
+    }
+        
+}
 
 

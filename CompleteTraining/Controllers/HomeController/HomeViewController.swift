@@ -8,12 +8,11 @@
 import UIKit
 import CoreMotion
 
-final class HomeViewController: UIViewController, HomeViewDelegate {
-   
-        let viewModel = HomeCollectionModel()
+final class HomeViewController: UIViewController, PopUpDidSelectDelegate {
+    
         
     private let homeView = HomeView()
-        
+    
     /// Provides to create an instance of the CMMotionActivityManager.
     private let activityManager = CMMotionActivityManager()
     /// Provides to create an instance of the CMPedometer.
@@ -27,12 +26,10 @@ final class HomeViewController: UIViewController, HomeViewDelegate {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
-        view.addSubview(homeView)
-    
-        addConstraints()
         homeView.delegate = self
+        view.addSubview(homeView)
         
-        
+        addConstraints()
         startUpdates()
     }
     
@@ -57,10 +54,27 @@ final class HomeViewController: UIViewController, HomeViewDelegate {
         ])
         
     }
-    func listView() {
-        print("selected hom")
+    
+    func didSelectTodaysProgram() {
+        print("bastım")
+//        let controller = TodaysProgramPopUpViewController()
+//        navigationController?.pushViewController(controller, animated: true)
     }
     
+    func didSelectTodaysChallange() {
+        let controller = TodaysProgramPopUpViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    func didSelectLastNote() {
+        let controller = TodaysProgramPopUpViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    func didSelectCurrentLifts() {
+        let controller = TodaysProgramPopUpViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
     
 }
 
