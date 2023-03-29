@@ -14,11 +14,17 @@ final class TodaysProgramPopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        tapGesture.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture)
+        
         view.addSubview(pop)
         
-       
+        
     }
     
-    
+    @objc func handleTap() {
+        dismiss(animated: true, completion: nil)
+    }
     
 }
