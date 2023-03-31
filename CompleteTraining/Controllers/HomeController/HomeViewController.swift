@@ -55,9 +55,9 @@ final class HomeViewController: UIViewController, PopUpDidSelectDelegate {
     }
     
     func didSelectTodaysProgram() {
-        print("bastım")
-//        let controller = TodaysProgramPopUpViewController()
-//        navigationController?.pushViewController(controller, animated: true)
+        let popUpVC = TodaysProgramPopUpViewController()
+        popUpVC.modalPresentationStyle = .overCurrentContext
+        present(popUpVC, animated: true, completion: nil)
     }
     
     func didSelectTodaysChallange() {

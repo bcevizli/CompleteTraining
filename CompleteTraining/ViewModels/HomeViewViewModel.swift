@@ -60,8 +60,7 @@ extension HomeViewViewModel: UICollectionViewDataSource, UICollectionViewDelegat
         collectionView.deselectItem(at: indexPath, animated: true)
         
         if indexPath.row == 0 {
-            print("beni niye kullanamiyosun")
-//            delegate?.didSelectHomeCell()
+            delegate?.didSelectHomeCell()
         } else if indexPath.row == 1 {
             delegate?.didSelectHomeCell1()
         } else if indexPath.row == 2 {

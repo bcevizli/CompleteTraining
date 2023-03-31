@@ -48,6 +48,7 @@ final class HomeView: UIView {
         collectionView.showsHorizontalScrollIndicator = false
         addSubview(collectionView)
         addConstraint()
+        viewModel.delegate = self
     }
     required init?(coder: NSCoder) {
         fatalError("Unsupported")
